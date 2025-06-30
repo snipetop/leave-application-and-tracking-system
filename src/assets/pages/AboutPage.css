@@ -1,0 +1,161 @@
+.about-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f7faff 60%, #e0e7ef 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.about-header {
+  width: 100vw;
+  text-align: center;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.about-header h1 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #1f25e8;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+
+.about-tagline {
+  font-size: 1.2rem;
+  color: #5eaefd;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.about-main {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(106,130,251,0.10);
+  padding: 2rem 2.5rem;
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+}
+
+.about-card h2 {
+  color: #1f25e8;
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 0.7rem;
+}
+
+.about-card p {
+  color: #232946;
+  font-size: 1.05rem;
+}
+
+.about-features {
+  background: #e0e7ef;
+  border-radius: 18px;
+  padding: 2rem 2.5rem;
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  box-shadow: 0 2px 16px rgba(106,130,251,0.07);
+}
+
+.about-features h2 {
+  color: #1f25e8;
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 0.7rem;
+}
+
+.about-features ul {
+  list-style: disc inside;
+  color: #232946;
+  font-size: 1.05rem;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.about-extra {
+  background: #fffbe6;
+  border-radius: 18px;
+  padding: 1.5rem 2rem;
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  box-shadow: 0 2px 16px rgba(106,130,251,0.07);
+}
+
+.about-extra h2 {
+  color: #b59f00;
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 0.7rem;
+}
+
+.about-footer {
+  width: 100vw;
+  text-align: center;
+  font-size: 1rem;
+  color: #888;
+  margin: 0;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  z-index: 2;
+}
+
+.about-bg::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('https://www.transparenttextures.com/patterns/cubes.png');
+  opacity: 0.07;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.template {
+  cursor: pointer;
+}
+
+.template:hover {
+  box-shadow: 0 4px 24px rgba(31,37,232,0.18), 0 2px 16px rgba(106,130,251,0.13);
+  background: #f7faff;
+  transform: scale(1.025);
+  transition: box-shadow 0.18s, background 0.18s, transform 0.18s;
+}
+
+.about-back-btn-fixed {
+  position: fixed;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 1000;
+  background: #e0e7ef;
+  color: #1f25e8;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+}
+
+.about-back-btn-fixed:hover {
+  background: #1f25e8;
+  color: #fff;
+} 

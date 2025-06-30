@@ -1,0 +1,147 @@
+.leave-page-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f7faff 60%, #e0e7ef 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.leave-content {
+  padding: 1rem 0;
+}
+
+.leave-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding: 0 1rem;
+}
+
+.leave-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #333;
+}
+
+.request-leave-btn {
+  background: #1f25e8;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.request-leave-btn:hover {
+  background: #43cea2;
+}
+
+.leave-types-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  padding: 0 1rem;
+}
+
+.leave-type-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.leave-type-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1f25e8;
+  margin-bottom: 0.5rem;
+}
+
+.leave-type-desc {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.leave-table-section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.table-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.leave-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leave-table th,
+.leave-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.leave-table th {
+  background: #f7faff;
+  font-weight: 700;
+  color: #1f25e8;
+}
+
+.leave-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.status-badge.pending { background-color: #f59e0b; }
+.status-badge.approved { background-color: #10b981; }
+.status-badge.rejected { background-color: #ef4444; }
+
+.leave-footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem 0 0.5rem 0;
+  color: #a0aec0;
+  font-size: 1rem;
+}
+
+@media (max-width: 700px) {
+  .leave-types-container {
+    padding: 1rem 0.2rem;
+  }
+  .leave-types-list {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .leave-type-card {
+    max-width: 98vw;
+    padding: 1.2rem 0.7rem;
+  }
+  .leave-table th, .leave-table td {
+    padding: 0.6rem 0.5rem;
+    font-size: 0.98rem;
+  }
+} 

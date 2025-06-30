@@ -1,0 +1,239 @@
+.admin-leaves-bg {
+  min-height: 100vh;
+  background: #f8f9fb;
+  padding: 0 0 2rem 0;
+  position: relative;
+}
+
+.admin-leaves-header {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 2.5rem 2rem 1.2rem 2rem;
+  background: none;
+}
+.admin-leaves-header-icon {
+  font-size: 2.5rem;
+  color: #5eaefd;
+  background: #e7f0ff;
+  border-radius: 12px;
+  padding: 0.7rem;
+}
+.admin-leaves-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #232946;
+  margin-bottom: 0.2rem;
+}
+.admin-leaves-subtitle {
+  color: #7b7b8b;
+  font-size: 1.1rem;
+}
+.admin-leaves-new-btn {
+  margin-left: auto;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 0.7rem 2.2rem;
+  cursor: pointer;
+  transition: background 0.18s, box-shadow 0.18s;
+  box-shadow: 0 2px 8px rgba(98,109,161,0.13);
+}
+.admin-leaves-new-btn:hover {
+  background: #1f25e8;
+}
+
+.admin-leaves-alert {
+  background: #fffbe6;
+  color: #b59f00;
+  font-size: 1.08rem;
+  font-weight: 600;
+  border-radius: 8px;
+  margin: 0 2rem 1.5rem 2rem;
+  padding: 1rem 1.5rem;
+  border-left: 6px solid #ffe066;
+}
+
+.admin-leaves-section {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(44,62,80,0.06);
+  margin: 0 2rem 2.5rem 2rem;
+  padding: 2rem 2rem 1.5rem 2rem;
+}
+.admin-leaves-section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #232946;
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.admin-leaves-section-icon {
+  font-size: 1.2rem;
+  color: #2563eb;
+}
+.admin-leaves-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px 0 rgba(60, 60, 120, 0.04);
+  font-size: 1rem;
+}
+.admin-leaves-table th, .admin-leaves-table td {
+  padding: 0.9rem 1rem;
+  text-align: left;
+}
+.admin-leaves-table th {
+  background: #f3f4f6;
+  font-weight: 700;
+  color: #232946;
+}
+.admin-leaves-table tr {
+  border-bottom: 1px solid #f0f0f0;
+}
+.admin-leaves-table tr:last-child {
+  border-bottom: none;
+}
+.admin-leaves-employee {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.admin-leaves-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #e7f0ff;
+}
+.admin-leaves-status {
+  display: inline-block;
+  padding: 4px 18px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+.admin-leaves-status.approved {
+  background: #b6f5d8;
+  color: #1a7f37;
+}
+.admin-leaves-status.pending {
+  background: #fffbe6;
+  color: #b59f00;
+}
+.admin-leaves-action {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  color: #bfc9e0;
+  transition: color 0.18s;
+}
+.admin-leaves-action.approve {
+  color: #1a7f37;
+}
+.admin-leaves-action.reject {
+  color: #fc5c7d;
+}
+.admin-leaves-action:hover {
+  opacity: 0.8;
+}
+
+.admin-leaves-balance-section {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(44,62,80,0.06);
+  margin: 0 2rem 2.5rem 2rem;
+  padding: 2rem 2rem 1.5rem 2rem;
+}
+.admin-leaves-balance-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #232946;
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.admin-leaves-balance-cards {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.admin-leaves-balance-card {
+  flex: 1 1 220px;
+  min-width: 220px;
+  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px 0 rgba(60, 60, 120, 0.04);
+  padding: 1.5rem 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.1rem;
+}
+.admin-leaves-balance-type {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.admin-leaves-balance-value {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.admin-leaves-balance-total {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #7b7b8b;
+  margin-left: 0.5rem;
+}
+
+.admin-leaves-footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem 0 0.5rem 0;
+  color: #a0aec0;
+  font-size: 1rem;
+}
+
+.admin-leaves-back-btn {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  z-index: 10;
+  background: #e0e7ef;
+  color: #1f25e8;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+}
+.admin-leaves-back-btn:hover {
+  background: #1f25e8;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .admin-leaves-header, .admin-leaves-section, .admin-leaves-balance-section {
+    padding: 1.2rem 0.5rem;
+    margin: 0 0.5rem 1.5rem 0.5rem;
+  }
+  .admin-leaves-balance-cards {
+    flex-direction: column;
+    gap: 1rem;
+  }
+} 

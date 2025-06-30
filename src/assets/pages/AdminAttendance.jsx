@@ -40,7 +40,7 @@ const AdminAttendance = () => {
     <div className="attendance-content-wrapper" id="admin-attendance-wrapper">
       <div className="profile-header-flex">
         <h1 className="profile-header">Attendance Management</h1>
-        <Profile name={admin.name} role="Administrator" avatar={admin.avatar} />
+        {/* <Profile name={admin.name} role="Administrator" avatar={admin.avatar} /> */}
       </div>
       <div className="search-section">
         <input
@@ -61,7 +61,7 @@ const AdminAttendance = () => {
         {filteredData.map(employee => (
           <div className="attendance-card" key={employee.id}>
             <div className="attendance-card-header">
-              <img src={employee.avatar} alt={`${employee.name}'s profile picture`} className="attendance-avatar" />
+              {/* <img src={employee.avatar} alt={`${employee.name}'s profile picture`} className="attendance-avatar" /> */}
               <div>
                 <div className="attendance-name">{employee.name}</div>
                 <div className="attendance-id">{employee.employeeId}</div>

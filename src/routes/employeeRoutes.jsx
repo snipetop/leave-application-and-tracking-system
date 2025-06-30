@@ -38,5 +38,5 @@ export const employeeRoutes = (
         <Route path="leave" element={<LeavePage />} />
         <Route path="settings" element={<EmployeeSettings />} />
         <Route path="attendance" element={<EmployeeAttendance />} />
-    </Route>
+        </Route>
 ); 
